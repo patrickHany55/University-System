@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './navbarcomponent/navbar';
 import { Route,Routes } from 'react-router-dom';
 import Homepage from './homepagecomponent/homepage'
+import Curriculum from './curriculumcomponent/curriculumpage';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path ='/' element={<Homepage/>} />
+        <Route path='curriculum' element={<Curriculum/>}/>
       </Routes>
     </div>
   );
