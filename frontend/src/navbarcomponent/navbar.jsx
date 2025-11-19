@@ -6,12 +6,11 @@ const Navbar = () => {
         <nav className="container">
             <div className='top-header'>
                 <h1>Fox University</h1>
-                <button className='applybutton'>Apply now</button>
             </div>
 
             <div className='nav-bar'>
                 <NavLink 
-                    to='/' 
+                    to='/home' 
                     style={({ isActive }) => ({
                         color: isActive ? '#ff6b35' : '#ffffff',
                         borderBottom: isActive ? '3px solid #ff6b35' : 'none',
@@ -28,18 +27,8 @@ const Navbar = () => {
                         paddingBottom: isActive ? '20px' : '0'
                     })}
                 >
-                    Curriculum
+                    Dashboard
                 </NavLink> 
-                <NavLink 
-                    to='/facilities'
-                    style={({ isActive }) => ({
-                        color: isActive ? '#ff6b35' : '#ffffff',
-                        borderBottom: isActive ? '3px solid #ff6b35' : 'none',
-                        paddingBottom: isActive ? '20px' : '0'
-                    })}
-                >
-                   Facilities
-                </NavLink>
                 <NavLink 
                     to='/staff'
                     style={({ isActive }) => ({

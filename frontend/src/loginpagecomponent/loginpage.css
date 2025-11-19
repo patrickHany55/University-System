@@ -1,0 +1,114 @@
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1a1a2e; /* dark background */
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.login-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+.login-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Role Tabs */
+.role-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.role {
+  flex: 1;
+  padding: 10px 0;
+  margin: 0 5px;
+  border: 1px solid #ff6b35;
+  background: white;
+  color: #ff6b35;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.role.active,
+.role:hover {
+  background-color: #ff6b35;
+  color: white;
+}
+
+/* Form */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-card input {
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #ff6b35;
+}
+
+/* Buttons */
+.applybutton {
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.applybutton:hover {
+  background-color: #e55a28;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Toggle Login / Sign Up */
+.toggle-text {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #555;
+}
+
+.toggle-link {
+  color: #ff6b35;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.toggle-link:hover {
+  color: #e55a28;
+}

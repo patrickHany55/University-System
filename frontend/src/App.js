@@ -1,21 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './navbarcomponent/navbar';
-import { Route,Routes } from 'react-router-dom';
-import Homepage from './homepagecomponent/homepage'
-import Curriculum from './curriculumcomponent/curriculumpage';
-
+import Login from './loginpagecomponent/loginpages';
+import HomePage from './homepagecomponent/homepage';
 
 function App() {
+  const location = useLocation();
+
+  // Show Navbar on all pages except login
+  const showNavbar = location.pathname !== "/";
+
   return (
     <div className="App">
-      <Navbar/>
+      {showNavbar && <Navbar />}
+
       <Routes>
-        <Route path ='/' element={<Homepage/>} />
-        <Route path='curriculum' element={<Curriculum/>}/>
+        {/* Public Pages */}
+        <Route path="/" element={<Login />} />
+
+        {/* Home page for all roles */}
+        <Route path="/home" element={<HomePage />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
+
+
+
